@@ -1,0 +1,23 @@
+<div class="container-fluid">
+	<ul class="row">
+		<li ng-repeat="user in users" class="col-md-4 col-sm-4 col-xs-6">
+			<div class="col-xs-12 box">
+				<div class=" col-md-5 col-sm-12 leftBox">
+					<img src="images/profilePic.jpg"  alt="" class="picture" />
+				</div>
+				<div class=" col-md-7 col-sm-12 rightBox">
+					<h5>{{user.name}}</h5>
+					<p> {{user.username}} </p>
+					<a id="email" href="mailto: {{user.email}}"> {{user.email}} </a>
+					<p> Posts: {{postsCount[user.id]}} </p>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
